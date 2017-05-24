@@ -119,6 +119,8 @@ add_action( 'widgets_init', 'northern_media_widgets_init' );
 function northern_media_scripts() {
 	wp_enqueue_style( 'northern_media-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'northern_media-style', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' );
+
 	wp_enqueue_script( 'northern_media-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 

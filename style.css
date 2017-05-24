@@ -61,5 +61,64 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 .swiper-container-home {
-    height: 80vh !important;
+    height: 70vh !important;
+}
+
+#team-button, #recent-projects .button {
+    margin-top: 40px;
+}
+
+.slide-bg {
+background: -webkit-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0)100%);
+background: -o-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
+background: -ms-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
+background: -moz-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
+background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
+
+    z-index: 1;
+    background-size: cover;
+    opacity: 1;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left:0px;
+    width: 70vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
+}
+
+.slide-overlay {
+    position: relative;
+    z-index: 2;
+    max-width: 75vw;
+    top: 30%;
+    left: 10%;
+}
+
+.slide-overlay button {
+    margin-right: 10px;
+    font-weight: 100;
+}
+
+.slide-overlay h1 {
+    font-weight: bold;
+    color: #c3d600;
+    line-height: .7;
+    font-size: 50px;
+}
+
+.slide-overlay h2 {
+    line-height: .7;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#article #author img {
+    width: auto;
+    height: 80px;
 }
