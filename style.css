@@ -122,3 +122,26 @@ h1, h2, h3, h4, p {
     width: auto;
     height: 80px;
 }
+
+/*NAV*/
+.navbar, .navbar-default, .navbar-fixed-top {
+background: -webkit-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0)100%) !important;
+background: -o-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%) !important;
+background: -ms-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%) !important;
+background: -moz-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%) !important;
+background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%) !important;
+padding: 4px 0px;
+}
+
+#head-wrapper {
+    padding: 4px 0;
+}
+
+#head-wrapper li {
+    font-size: 18px;
+}
+
+#head-wrapper .menu-primary-container {
+    display: inline-block;
+    vertical-align: middle;
+}

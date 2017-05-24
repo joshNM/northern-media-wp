@@ -21,40 +21,26 @@ get_header(); ?>
 		<section id="head-wrapper">
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container-fluid">
-					<div class="navbar-header">
-						<span class="sr-only">Toggle navigation</span>
-
-						</button>
-					</div>
-					<div id="navbar" class="navbar-collapse collapse">
-
-						<?php
-								$headerHome = array(
-								'menu_class' => 'nav navbar-nav animsition',
-								'theme_location' => 'primary'
-								);
-							?>
-
-							<?php echo wp_nav_menu ( $headerHome ) ?>
-
-						<ul class="nav navbar-nav navbar-right">
-							<li class=""><a href="tel:<?php the_field('telephone_number', 'option'); ?>"><?php the_field('telephone_number', 'option'); ?></a></li>
-							<li><a href="mailto:<?php the_field('email_address', 'option'); ?>"><?php the_field('email_address', 'option'); ?></a></li>
-							<li><a href="<?php the_field('facebook_url', 'option'); ?>"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="<?php the_field('twitter_url', 'option'); ?>"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="<?php the_field('linkedin_url', 'option'); ?>"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="<?php the_field('behance_url', 'option'); ?>"><i class="fa fa-behance"></i></a></li>
-						</ul>
-
-					</div>
-					<!--/.nav-collapse -->
-				</section>
-
+				
+					<img style="max-width: 100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/images/secondarylogo.c7dacc97.png">			
+				<?php
+					$headerHome = array(
+					'menu_class' => 'nav navbar-nav animsition',
+					'theme_location' => 'primary',
+					'depth' => 1
+					);
+				?>
+					<?php echo wp_nav_menu ( $headerHome ) ?>
+					<!-- <div style="clear: both;"></div> -->
+				</div>
+			</nav>
 			</section>
-			<!-- end landing -->
+
+		</section>
+		<!-- end landing -->
 
 			<section id="menu-burger">
-			<button class="hamburger hamburger--elastic" type="button">
+				<button class="hamburger hamburger--elastic" type="button">
 				  <span class="hamburger-box">
 				    <span class="hamburger-inner"></span>
 				  </span>

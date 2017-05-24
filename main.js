@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    // NEWS MATCH HEIGHT
+    $('#latest-news .latest-news-inner').matchHeight();
 
 
     // MAP JS
