@@ -1,9 +1,9 @@
 <section id="social-hub">
   <div class="container">
     <h2 class="section-title">Social Hub</h2>
-    <p>
+  
       <?php the_field('social_media_text', 'option'); ?>
-    </p>
+    
     <div class="row">
       <div class="col-md-4" id="facebook">
         <div id="fb-root"></div>

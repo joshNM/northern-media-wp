@@ -41,3 +41,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #newsletter-subscription li:first-of-type {
     font-weight: bold;
 }
+
+/*FIX SPACING ISSUES*/
+#team, #recent-projects, #latest-news, #contact, #social-hub, #clients, #our-agency {
+    padding: 50px 0;
+}
+
+.section-title {
+    padding: 0px 0px 40px 0px;
+    margin-bottom: 40px;
+}
+
+#contact p {
+    margin-bottom: 40px;
+}
+
+#latest-news p {
+    margin-bottom: 40px;
+}
+
+.swiper-container-home {
+    height: 80vh !important;
+}
