@@ -13,11 +13,11 @@
 
       // The Query
       $user_query = new WP_User_Query( $userArgs );
+      $index = 0;
 
-      // User Loop
-      if ( ! empty( $user_query->results ) ) {
-        foreach ( $user_query->results as $user ) { ?>
 
+        foreach ( $user_query->results as $user ) : ?>
+          <?php if($index < 10) : ?>
 
         <?php //print_r($user); ?>
         <div class="twenty">
@@ -79,10 +79,7 @@
         </div>
 
 
-      <?php }
-      } else {
-        echo 'No users found.';
-      }
+    <?php endif; $index++; endforeach; ?>
 
     ?>
 

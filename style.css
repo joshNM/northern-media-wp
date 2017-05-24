@@ -37,3 +37,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .map-container iframe.clicked{
     pointer-events: auto;
 }
+
+#newsletter-subscription li:first-of-type {
+    font-weight: bold;
+}
