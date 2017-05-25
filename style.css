@@ -161,7 +161,7 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     .slide-overlay h1 {
         font-size: 20px !important;
     }
-    .slide-overlay h2{
+    .slide-overlay h2, .slide-overlay button{
         display: none;
     }
     #team .inner-member {
