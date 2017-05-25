@@ -20,14 +20,14 @@ get_header(); ?>
 		// Service nav
 		get_template_part( 'template-parts/content', 'servicenav' );
 		// Case Study
-				// get_template_part( 'template-parts/content', 'casestudy' );
+		get_template_part( 'template-parts/content', 'slider' );
 	?>
 <span id="newSlug" style="display: none;"><?php echo $slug ?></span>
 
 
 	<section id="service-intro">
 		<div class="container" style="overflow: hidden;">
-			<h2 class=""><?php the_title(); ?></h2>
+			<h2 class="section-title"><?php the_title(); ?></h2>
 			<?php the_content(); ?>
 			<?php
 
@@ -116,149 +116,11 @@ get_header(); ?>
 
 	<?php
 		get_template_part( 'template-parts/content', 'team' );
-	?>
 
-	<section class="inspiration-board">
-		<div class="container">
-			<h2 class="section-title">Inspirational Board</h2>
-			<?php the_field('inspirational_board_content', 'option') ?>
+		get_template_part( 'template-parts/content', 'news' );
 
-			<div class="row">
+		// get_template_part( 'template-parts/content', 'team' );
 
-				  <?php
-
-			      $inspirationalArgs1 = array(
-			      'post_type' => 'post',
-			      'posts_per_page' => 3,
-						'tag' => 'inspiration'
-			      );
-
-			      $inspNews1 = new WP_Query( $inspirationalArgs1 ); ?>
-
-				<div class="col-md-4">
-
-					<?php
-					  if ( $inspNews1->have_posts() ) :
-				      while ( $inspNews1->have_posts() ) : $inspNews1->the_post();
-
-				      $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-					?>
-
-					<div class="inspiration-card">
-						<?php if ($feat_image) : ?>
-						<img src="<?php echo $feat_image; ?>" class="inspiration-card__img">
-					<?php endif; ?>
-						<div class="inspiration-card__content">
-							<span class="inspiration-card__date"><?php the_time('F j, Y'); ?></span>
-							<a href="<?php the_permalink(); ?>" class="inspiration-link"><h2 class="inspiration-card__title"><?php the_title(); ?></h2></a>
-							<p><?php echo wp_trim_words( get_the_content(), 20, '...' ); ?></p>
-							<?php echo get_simple_likes_button( get_the_ID() ); ?>
-						</div>
-						<i class="fa fa-share-alt"></i>
-						<?php echo crunch(); ?>
-					</div>
-
-				<?php endwhile; ?>
-		        <?php wp_reset_postdata(); ?>
-		        <?php else : ?>
-		        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-		        <?php endif; ?>
-
-				</div>
-
-				  <?php
-
-			      $inspirationalArgs2 = array(
-			      'post_type' => 'post',
-			      'posts_per_page' => 3,
-			      'offset' => 3,
-						'tag' => 'inspiration'
-			      );
-
-			      $inspNews2 = new WP_Query( $inspirationalArgs2 ); ?>
-
-				<div class="col-md-4">
-
-					<?php
-					  if ( $inspNews2->have_posts() ) :
-				      while ( $inspNews2->have_posts() ) : $inspNews2->the_post();
-
-				      $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-					?>
-
-					<div class="inspiration-card">
-						<img src="<?php echo $feat_image; ?>" class="inspiration-card__img">
-						<div class="inspiration-card__content">
-							<span class="inspiration-card__date"><?php the_time('F j, Y'); ?></span>
-							<a href="<?php the_permalink(); ?>" class="inspiration-link"><h2 class="inspiration-card__title"><?php the_title(); ?></h2></a>
-							<p><?php echo wp_trim_words( get_the_content(), 20, '...' ); ?></p>
-							<?php echo get_simple_likes_button( get_the_ID() ); ?>
-						</div>
-						<i class="fa fa-share-alt"></i>
-						<?php echo crunch(); ?>
-					</div>
-
-				<?php endwhile; ?>
-		        <?php wp_reset_postdata(); ?>
-		        <?php else : ?>
-
-		        <?php endif; ?>
-
-				</div>
-
-				  <?php
-
-			      $inspirationalArgs3 = array(
-			      'post_type' => 'post',
-			      'posts_per_page' => 3,
-			      'offset' => 6,
-						'tag' => 'inspiration'
-			      );
-
-			      $inspNews3 = new WP_Query( $inspirationalArgs3 ); ?>
-
-				<div class="col-md-4">
-
-					<?php
-					  if ( $inspNews3->have_posts() ) :
-				      while ( $inspNews3->have_posts() ) : $inspNews3->the_post();
-
-				      $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-					?>
-
-					<div class="inspiration-card">
-						<img src="<?php echo $feat_image; ?>" class="inspiration-card__img">
-						<div class="inspiration-card__content">
-							<span class="inspiration-card__date"><?php the_time('F j, Y'); ?></span>
-							<a href="<?php the_permalink(); ?>" class="inspiration-link"><h4 class="inspiration-card__title"><?php the_title(); ?></h4></a>
-							<p><?php echo wp_trim_words( get_the_content(), 20, '...' ); ?></p>
-							<?php echo get_simple_likes_button( get_the_ID() ); ?>
-					</div>
-					<i class="fa fa-share-alt"></i>
-					<?php echo crunch(); ?>
-				</div>
-
-				<?php endwhile; ?>
-		        <?php wp_reset_postdata(); ?>
-		        <?php else : ?>
-
-		        <?php endif; ?>
-
-				</div>
-
-
-
-
-
-
-
-			</div>
-
-		</div>
-	</section>
-
-
-	<?php
 		// Newsletter
 		get_template_part( 'template-parts/content', 'newsletter' );
 		// Contact
