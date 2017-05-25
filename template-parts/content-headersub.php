@@ -12,35 +12,31 @@
 
       </section>
 
-<section id="small-nav">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li class="logo wow fadeInDown">
-      <a href="<?php echo home_url(); ?>">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/secondarylogo.c7dacc97.png">
-      </a>
-      </li>
-
+    <section id="head-wrapper">
+      <nav class="navbar navbar-default sub-nav ">
+        <div class="container-fluid">
+        
+          <a href="<?php echo home_url(); ?>"><img class="wow fadeInDown" style="max-width: 100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/images/secondarylogo.c7dacc97.png">  </a>   
         <?php
-          $headerSub = array(
-            'menu_class' => 'nav navbar-nav',
-            'theme_location' => 'primary',
-            'depth' => 1
+          $headerHome = array(
+          'menu_class' => 'nav navbar-nav animsition',
+          'theme_location' => 'primary',
+          'depth' => 1
           );
         ?>
+          <?php echo wp_nav_menu ( $headerHome ) ?>
 
-        <?php echo wp_nav_menu ( $headerSub ) ?>
-      
-      <li><a href="mailto:<?php the_field('email_address', 'option') ?>"><i class="fa fa-envelope-o"></i></a></li>
-      <li><a href="tel:<?php the_field('telephone_number', 'option') ?>"><i class="fa fa-phone"></i></a></li>
-      <li><a href="<?php the_field('facebook_url', 'option'); ?>"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="<?php the_field('twitter_url', 'option'); ?>"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="<?php the_field('linkedin_url', 'option'); ?>"><i class="fa fa-linkedin"></i></a></li>
-      <li><a href="<?php the_field('behance_url', 'option'); ?>"><i class="fa fa-behance"></i></a></li>
+        <ul class="social">
+            <li><a href="mailto:<?php the_field('email_address', 'option') ?>"><i class="fa fa-envelope-o"></i></a></li>
+            <li><a href="tel:<?php the_field('telephone_number', 'option') ?>"><i class="fa fa-phone"></i></a></li>
+            <li><a href="<?php the_field('facebook_url', 'option'); ?>"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="<?php the_field('twitter_url', 'option'); ?>"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="<?php the_field('linkedin_url', 'option'); ?>"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="<?php the_field('behance_url', 'option'); ?>"><i class="fa fa-behance"></i></a></li>
+        </ul>
 
 
-
-    </ul>
-  </div>
-</section>
-<!-- <div style="height: 100px;"></div> -->
+          <!-- <div style="clear: both;"></div> -->
+        </div>
+      </nav>
+      </section>

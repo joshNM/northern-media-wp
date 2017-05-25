@@ -25,6 +25,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 ----------------------------------------------------------------
 */
 
+.sub-nav {
+    margin-bottom: 0px !important;
+    border: none;
+    border-radius: 0px !important;
+}
+
 .map-container {
     width: 100%;
 }
