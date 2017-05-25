@@ -14,7 +14,7 @@ get_header(); ?>
 	
 	<?php 
 		// Service nav
-		// get_template_part( 'template-parts/content', 'servicenav' );
+		get_template_part( 'template-parts/content', 'servicenav' );
 	 ?>
 
 	

@@ -21,6 +21,14 @@
                 
           
                 <div class="slide-bg"></div>
+
+                <div class="next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+                <div class="prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+
             </div>
             <?php  endwhile;
             else :

@@ -10,4 +10,11 @@ $(document).ready(function(){
         $(this).find('iframe').removeClass('clicked')
     });
 
+    // SERVICE NAV
+    $('.menu-item-86').click(function(event){
+        console.log('Clicked');
+        event.preventDefault();
+        $('#services-nav').slideToggle();
+    })
+
 })
