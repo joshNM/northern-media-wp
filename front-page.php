@@ -22,7 +22,7 @@ get_header(); ?>
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container-fluid">
 				
-					<img style="max-width: 100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/images/secondarylogo.c7dacc97.png">			
+					<img class="wow fadeInDown" style="max-width: 100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/images/secondarylogo.c7dacc97.png">			
 				<?php
 					$headerHome = array(
 					'menu_class' => 'nav navbar-nav animsition',
@@ -31,6 +31,17 @@ get_header(); ?>
 					);
 				?>
 					<?php echo wp_nav_menu ( $headerHome ) ?>
+
+				<ul class="social">
+			      <li><a href="mailto:<?php the_field('email_address', 'option') ?>"><i class="fa fa-envelope-o"></i></a></li>
+			      <li><a href="tel:<?php the_field('telephone_number', 'option') ?>"><i class="fa fa-phone"></i></a></li>
+			      <li><a href="<?php the_field('facebook_url', 'option'); ?>"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="<?php the_field('twitter_url', 'option'); ?>"><i class="fa fa-twitter"></i></a></li>
+			      <li><a href="<?php the_field('linkedin_url', 'option'); ?>"><i class="fa fa-linkedin"></i></a></li>
+			      <li><a href="<?php the_field('behance_url', 'option'); ?>"><i class="fa fa-behance"></i></a></li>
+				</ul>
+
+
 					<!-- <div style="clear: both;"></div> -->
 				</div>
 			</nav>

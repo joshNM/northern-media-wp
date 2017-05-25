@@ -136,6 +136,9 @@ background: -ms-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
 background: -moz-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%) !important;
 background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%) !important;
 padding: 4px 0px;
+-webkit-box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
+box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
 }
 
 #head-wrapper {
@@ -202,4 +205,22 @@ padding: 4px 0px;
     .slide-overlay h2 {
         font-size: 16px;
     }
+}
+
+#head-wrapper {
+    text-align: center;
+}
+
+#head-wrapper img {
+    margin-right: 100px;
+}
+
+#head-wrapper .social {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#head-wrapper .social li {
+    display: inline-block;
+    margin-left: 15px;
 }
