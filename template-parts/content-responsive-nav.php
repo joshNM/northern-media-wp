@@ -4,7 +4,8 @@
 		<?php
           $headerResponsive = array(
             'menu_class' => 'responsive-nav__nav',
-            'theme_location' => 'primary'
+            'theme_location' => 'primary',
+            'depth' => 1
           );
         ?>
 

@@ -92,8 +92,8 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     position: absolute;
     z-index: 2;
     max-width: 75vw;
-    top: 55%;
-    transform: translateY(-55%);
+    top: 60%;
+    transform: translateY(-60%);
     left: 10%;
 }
 
@@ -114,6 +114,59 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     font-weight: 100;
     font-size: 24px;
     color: white;
+}
+
+@media (min-width: 1500px) {
+    .slide-overlay h1 {
+        font-weight: bold;
+        color: #c3d600;
+        line-height: .7;
+        font-size: 50px;
+    }
+
+    .slide-overlay h2 {
+        line-height: .7;
+        font-weight: 100;
+        font-size: 24px;
+        color: white;
+    }
+}
+
+@media (max-width: 1270px) {
+    #head-wrapper img {
+        margin-right: 65px !important;
+    }
+    #head-wrapper .social {
+        margin-left: 20px !important;
+    }
+}
+
+@media (min-width: 1100px) {
+    .slide-overlay h1 {
+        font-weight: bold;
+        color: #c3d600;
+        line-height: .7;
+        font-size: 35px;
+    }
+
+    .slide-overlay h2 {
+        line-height: .7;
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+@media(max-width: 767px) {
+    .slide-overlay h1 {
+        font-size: 20px !important;
+    }
+    .slide-overlay h2{
+        display: none;
+    }
+    #team .inner-member {
+        height: 165px;
+    }
 }
 
 .slide-overlay button {
@@ -143,7 +196,7 @@ box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
 }
 
 #head-wrapper {
-    padding: 4px 0;
+    /*padding: 4px 0;*/
 }
 
 #head-wrapper li {
@@ -187,11 +240,36 @@ box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
 }
 
 @media (max-width: 1024px) {
-
+.slide-bg {
+    width: 100vw !important;
+}
+.slide-overlay {
+    top: 50%;
+    transform: translateY(-50%);
+}
 }
 
 @media (max-width: 768px) {
+.slide-bg {
+    width: 100vw !important;
+}
+.slide-overlay {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slide-overlay h1 {
+    font-weight: bold;
+    color: #c3d600;
+    line-height: .7;
+    font-size: 30px;
+}
 
+.slide-overlay h2 {
+    line-height: .7;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
 }
 
 
