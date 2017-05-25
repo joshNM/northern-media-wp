@@ -18,7 +18,7 @@
 
         foreach ( $user_query->results as $user ) : ?>
 
-          <?php if($index < 10) : ?>
+          <?php if($index < 100) : ?>
 
         <?php //print_r($user); ?>
         <div class="twenty">

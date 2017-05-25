@@ -50,7 +50,7 @@ get_header(); ?>
 	
 	<?php
 		// Approach
-		get_template_part( 'template-parts/content', 'team' );
+		get_template_part( 'template-parts/content', 'team-pg' );
 		// Newsletter
 		get_template_part( 'template-parts/content', 'newsletter' );
 		// Contact
