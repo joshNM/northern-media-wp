@@ -225,3 +225,7 @@ box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
     display: inline-block;
     margin-left: 15px;
 }
+
+#clients {
+    overflow-x: hidden;
+}
