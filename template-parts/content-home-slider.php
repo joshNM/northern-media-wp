@@ -7,8 +7,10 @@
             if( have_rows('slides') ):
             // loop through the rows of data
             while ( have_rows('slides') ) : the_row(); ?>
-            <div class="swiper-slide" style="color: white;background: url(<?php the_sub_field('slide_background'); ?>); background-size: cover; background-position: center center;">
+            <div class="swiper-slide">
                 
+                <img src="<?php the_sub_field('slide_background'); ?>">
+
                 <div class="slide-overlay wow fadeIn" >
                     <?php the_sub_field('slide_content'); ?>
                     
@@ -26,6 +28,6 @@
             ?>
             <!-- Add Pagination -->
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination-home"></div>
     </div>
 </section>

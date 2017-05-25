@@ -61,7 +61,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 .swiper-container-home {
-    height: 70vh !important;
+    /*height: 70vh !important;*/
 }
 
 #team-button, #recent-projects .button {
@@ -89,7 +89,7 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
 }
 
 .slide-overlay {
-    position: relative;
+    position: absolute;
     z-index: 2;
     max-width: 75vw;
     top: 55%;
@@ -113,6 +113,7 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     line-height: .7;
     font-weight: 100;
     font-size: 24px;
+    color: white;
 }
 
 .slide-overlay button {
@@ -156,9 +157,14 @@ box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
 
 .swiper-container-home {
     overflow-x: hidden;
+    height: 100% !important;
 }
 
-.swiper-container-home .swiper-pagination {
+.swiper-container-home button {
+    color: white;
+}
+
+.swiper-container-home .swiper-pagination-home {
     max-width: 10px;
     position: absolute;
     right: 30px;
@@ -166,6 +172,12 @@ box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
     top: 70%;
     transform: translateY(-70%);
     vertical-align: middle;
+    z-index: 99;
+}
+
+.swiper-container-home img {
+    width: 100%;
+    height: auto;
 }
 
 .swiper-container-home .swiper-pagination-bullet {
@@ -175,22 +187,11 @@ box-shadow: 0px 5px 16px -8px rgba(0,0,0,0.75);
 }
 
 @media (max-width: 1024px) {
-    .swiper-container-home {
-        height: 30vh !important;
-    }
 
-    .slide-bg {
-        width: 90vw;
-    }
 }
 
 @media (max-width: 768px) {
-    .slide-overlay h1 {
-        font-size: 30px;
-    }
-    .slide-overlay h2 {
-        font-size: 16px;
-    }
+
 }
 
 
