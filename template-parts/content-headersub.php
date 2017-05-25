@@ -24,7 +24,8 @@
         <?php
           $headerSub = array(
             'menu_class' => 'nav navbar-nav',
-            'theme_location' => 'primary'
+            'theme_location' => 'primary',
+            'depth' => 1
           );
         ?>
 

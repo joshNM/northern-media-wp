@@ -115,6 +115,10 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     font-size: 24px;
 }
 
+.slide-overlay button {
+    margin-top: 15px;
+}
+
 h1, h2, h3, h4, p {
     font-family: 'Open Sans', sans-serif !important;
 }
@@ -147,6 +151,10 @@ padding: 4px 0px;
     vertical-align: middle;
 }
 
+.swiper-container-home {
+    overflow-x: hidden;
+}
+
 .swiper-container-home .swiper-pagination {
     max-width: 10px;
     position: absolute;
@@ -161,4 +169,37 @@ padding: 4px 0px;
     height: 10px;
     width: 10px;
     background: white;
+}
+
+@media (max-width: 1024px) {
+    .swiper-container-home {
+        height: 30vh !important;
+    }
+
+    .slide-bg {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-overlay h1 {
+        font-size: 30px;
+    }
+    .slide-overlay h2 {
+        font-size: 16px;
+    }
+}
+
+
+#landing {
+    /*display: none;*/
+}
+
+@media (max-width: 500px) {
+    .slide-overlay h1 {
+        font-size: 30px;
+    }
+    .slide-overlay h2 {
+        font-size: 16px;
+    }
 }

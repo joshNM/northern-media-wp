@@ -9,9 +9,9 @@
             while ( have_rows('slides') ) : the_row(); ?>
             <div class="swiper-slide" style="color: white;background: url(<?php the_sub_field('slide_background'); ?>); background-size: cover; background-position: center center;">
                 
-                <div class="slide-overlay">
+                <div class="slide-overlay wow fadeIn" >
                     <?php the_sub_field('slide_content'); ?>
-                    <div style="margin-bottom: 10px;height: 10px;"></div>
+                    
                     <button class="button">Enquire</button>
                     <button class="button">Latest Projects</button>
                 </div>
