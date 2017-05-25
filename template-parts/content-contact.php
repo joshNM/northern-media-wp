@@ -1,8 +1,11 @@
 <section id="contact">
   <div class="container" style="max-width: 980px;">
     <h2 class="section-title">We love to talk</h2>
-    
-      <?php the_field('contact_info_text', 'option'); ?>
+      
+      <div class="intro">
+        <?php the_field('contact_info_text', 'option'); ?>
+      </div>
+      
     
     <div class="row">
       <div class="col-xs-12 col-sm-4 col-md-4" id="contact-information">
