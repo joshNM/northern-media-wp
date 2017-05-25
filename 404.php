@@ -15,7 +15,7 @@ get_header(); ?>
 			<section id="our-agency">
 				<div class="container">
 					<h2 class="section-title wow fadeInLeft">404</h2>
-					<h3 class="wow fadeInLeft" style="color: #9d9d9c">Sorry, we can't find what you are looking for...</h3>
+					<h3 class="wow fadeInLeft" style="color: #9d9d9c">Sorry, we can't find what you are looking for... why not get in touch to see if we can help?</h3>
 				</div>
 			</section>
 
