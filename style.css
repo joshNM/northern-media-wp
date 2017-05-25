@@ -92,7 +92,8 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     position: relative;
     z-index: 2;
     max-width: 75vw;
-    top: 30%;
+    top: 55%;
+    transform: translateY(-55%);
     left: 10%;
 }
 
@@ -144,4 +145,20 @@ padding: 4px 0px;
 #head-wrapper .menu-primary-container {
     display: inline-block;
     vertical-align: middle;
+}
+
+.swiper-container-home .swiper-pagination {
+    max-width: 10px;
+    position: absolute;
+    right: 30px;
+    left: auto;
+    top: 70%;
+    transform: translateY(-70%);
+    vertical-align: middle;
+}
+
+.swiper-container-home .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    background: white;
 }
