@@ -58,7 +58,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     margin-bottom: 40px;
 }
 
-#contact p {
+#contact p:first-of-type {
     margin-bottom: 40px;
 }
 
