@@ -359,7 +359,7 @@ section#approach, #service-intro {
 }
 
 .home #services-nav {
-    display: block !important;
+    display: block;
 }
 
 .swiper-container-home .next {
