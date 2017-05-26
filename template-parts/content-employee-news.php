@@ -7,7 +7,7 @@
 
         <div class="row">
         
-        <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="3" category="employee-news" scroll="false"]') ?>
+        <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="3" category="employee-news" scroll="false" button_label="Load More"]') ?>
         
         </div>
 
