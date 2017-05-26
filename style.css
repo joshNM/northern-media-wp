@@ -346,6 +346,7 @@ section#approach, #service-intro {
     top: 19px;
     right: -9px;
     color: white;
+    cursor: pointer;
 }
 
 /*service nav*/
@@ -392,4 +393,30 @@ section#approach, #service-intro {
     left: 10px;
 }
 
+#contact p, #contact h2, #contact .section-title {
+    color: #9d9d9c;
+    border-color: #9d9d9c;
+}
+
 /*employee news*/
+#employee-news {
+    padding: 50px 0;
+}
+#employee-news h2 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+#employee-news p {
+    color: #9d9d9c;
+}
+
+.center {
+    text-align: center;
+}
+
+.employee-article {
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
