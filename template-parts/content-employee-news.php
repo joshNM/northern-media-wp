@@ -26,8 +26,9 @@
                     </div>
                 </div>
             <?php endwhile; ?>
-
-
+        
+        <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="3" category="employee-news" scroll="false"]') ?>
+        
         </div>
 
     </div>
