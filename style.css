@@ -168,7 +168,7 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
 }
 
 @media(max-width: 767px) {
-    .slide-overlay h1 {
+    .slide-overlay {
         display: none;
     }
 
