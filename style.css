@@ -423,6 +423,10 @@ section#approach, #service-intro {
     margin-bottom: 20px;
 }
 
+#employee-news .col-md-4 {
+    min-height: 330px;
+}
+
 .employee-article img {
     max-width: 100%;
     border-top-right-radius: 10px;
