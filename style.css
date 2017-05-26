@@ -449,6 +449,15 @@ section#approach, #service-intro {
 
 #employee-news #load-more {
     display: block;
-    max-width: 100px;
+    max-width: 200px;
     margin: 0 auto;
+}
+
+#load-more {
+    background: 0 0;
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    -webkit-transition: .4s all;
+    transition: .4s all;
 }
