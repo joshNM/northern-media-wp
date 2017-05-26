@@ -442,3 +442,9 @@ section#approach, #service-intro {
     margin-top: 0px;
     font-size: 18px;
 }
+
+#employee-news #load-more {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+}
