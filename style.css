@@ -426,5 +426,8 @@ section#approach, #service-intro {
 }
 
 .employee-article__content {
-    padding: 7px;
+    padding: 25px;
+}
+.employee-article__content h2 {
+    margin-top: 0px;
 }
