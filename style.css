@@ -423,6 +423,8 @@ section#approach, #service-intro {
 
 .employee-article img {
     max-width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .employee-article__content {
