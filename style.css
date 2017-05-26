@@ -431,6 +431,12 @@ section#approach, #service-intro {
 .employee-article__content {
     padding: 25px;
 }
+
+.employee-article span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
 .employee-article__content h3 {
     margin-top: 0px;
     font-size: 18px;
