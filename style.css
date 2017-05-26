@@ -453,6 +453,11 @@ section#approach, #service-intro {
     margin: 0 auto;
 }
 
+.alm-btn-wrap {
+    width: 100%;
+    display: block;
+}
+
 #load-more {
     background: 0 0;
     padding: .5em 1em;
