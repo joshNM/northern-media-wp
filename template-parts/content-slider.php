@@ -15,8 +15,18 @@
                     <h1><?php the_sub_field('main_headline') ?></h1>
                     <h2><?php the_sub_field('secondary_headline') ?></h2>
                     
-                    <button class="button">Enquire</button>
+
+                    <?php if (have_rows('button')): ?>
+                        <?php while (have_rows('button')) : the_row(); ?>
+                            <a href="<?php the_sub_field('button_link') ?>" class="button"><?php the_sub_field('button_title'); ?></a>
+                        <?php endwhile; ?>
+                    <?php endif ?>
+
+                    
                     <button class="button">Latest Projects</button>
+
+
+
                 </div>
                 
           
