@@ -467,3 +467,8 @@ section#approach, #service-intro {
     transition: .4s all;
     color: #8c8c8c;
 }
+
+#home-slider .button {
+    margin-top: 15px;
+    display: inline-block;
+}
