@@ -51,6 +51,8 @@ get_header(); ?>
 	<?php
 		// Approach
 		get_template_part( 'template-parts/content', 'team-pg' );
+		// (Employee News)
+		get_template_part( 'template-parts/content', 'employee-news' );
 		// Newsletter
 		get_template_part( 'template-parts/content', 'newsletter' );
 		// Contact
