@@ -21,7 +21,7 @@
                     <img src="<?php the_post_thumbnail_url(); ?>">
                     <div class="employee-article__content">
                         <span><?php echo get_the_date() ?></span>
-                        <h3><?php the_title(); ?></h3>
+                        <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
                     </div>
                     </div>
                 </div>
