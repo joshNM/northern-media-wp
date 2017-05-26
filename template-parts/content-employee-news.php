@@ -15,7 +15,7 @@
 
                 $employeeArticle = new WP_Query($employeeArgs);
             ?>
-            <?php while($employeeArticle->have_posts()) : ?>
+            <?php while($employeeArticle->have_posts()) : $employeeArticle->the_post(); ?>
                 <div class="col-md-4">
                     <div class="employee-article">
                     <img src="<?php the_post_thumbnail_url(); ?>">
