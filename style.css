@@ -401,6 +401,7 @@ section#approach, #service-intro {
 /*employee news*/
 #employee-news {
     padding: 50px 0;
+    background:#e5e5e5;
 }
 #employee-news h2 {
     margin-top: 0px;
@@ -417,6 +418,13 @@ section#approach, #service-intro {
 
 .employee-article {
     background: white;
-    padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.employee-article img {
+    max-width: 100%;
+}
+
+.employee-article__content {
+    padding: 7px;
 }
