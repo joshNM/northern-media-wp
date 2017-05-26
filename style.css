@@ -387,3 +387,7 @@ section#approach, #service-intro {
     cursor: pointer;
     z-index: 999;
 }
+
+#services li:first-of-type .hover-service {
+    left: 10px;
+}
