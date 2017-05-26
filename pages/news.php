@@ -15,6 +15,8 @@ get_header(); ?>
 	<?php
 		// Service nav
 		get_template_part( 'template-parts/content', 'servicenav' );
+		// Slider
+		get_template_part( 'template-parts/content', 'slider' );
 		// Latest news
 		get_template_part( 'template-parts/content', 'latestnews' );
 		// Case studies
