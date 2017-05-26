@@ -18,7 +18,7 @@
 
                     <?php if (have_rows('button')): ?>
                         <?php while (have_rows('button')) : the_row(); ?>
-                            <a style="color: white;" href="<?php the_sub_field('button_link') ?>" class="button"><?php the_sub_field('button_title'); ?></a>
+                            <a style="color: white !important;" href="<?php the_sub_field('button_link') ?>" class="button"><?php the_sub_field('button_title'); ?></a>
                         <?php endwhile; ?>
                     <?php endif ?>
 
