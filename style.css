@@ -456,6 +456,7 @@ section#approach, #service-intro {
 .alm-btn-wrap {
     width: 100%;
     display: block;
+    clear: both;
 }
 
 #load-more {
