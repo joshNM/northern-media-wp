@@ -16,9 +16,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			
 			<?php
 			get_template_part( 'template-parts/content', 'servicenav' );
+			get_template_part( 'template-parts/content', 'slider' );
 			while ( have_posts() ) : the_post();
 
 			?>
