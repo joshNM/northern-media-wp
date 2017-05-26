@@ -10,7 +10,7 @@
             <?php 
                 $employeeArgs = [
                     'post_type' => 'post',
-                    'category__in' => 18
+                    'category__in' => [18]
                 ];
 
                 $employeeArticle = new WP_Query($employeeArgs);
