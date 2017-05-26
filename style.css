@@ -457,7 +457,7 @@ section#approach, #service-intro {
     background: 0 0;
     padding: .5em 1em;
     border-radius: 5px;
-    border: 1px solid #8c8c8c all;
+    border: 1px solid #8c8c8c;
     transition: .4s all;
     color: #8c8c8c;
 }
