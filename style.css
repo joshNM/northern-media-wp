@@ -709,3 +709,12 @@ section#approach, #service-intro {
     height: 100%;
 }  
 }
+
+@media (max-width: 780px) {
+    #our-agency {
+        padding: 50px 0;
+    }
+    #team, #recent-projects, #latest-news, #contact, #social-hub, #clients, #our-agency {
+        padding: 50px 0;
+    }
+}
