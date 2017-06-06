@@ -22,6 +22,7 @@ $(document).ready(function(){
     $('.Faq').click(function(){
       console.log('click')
       $(this).find('.Faq__answer').slideToggle();
+      // $(this).toggleClass('absolute')
     })
 
     // PROJECTS FILTER ============================================================================================== //

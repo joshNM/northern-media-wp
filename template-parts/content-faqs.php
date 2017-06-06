@@ -1,6 +1,6 @@
 <section class="Faqs">
     <div class="container">
-        <h2 class="section-title"><?php the_title() ?> FAQs</h2>
+        <center><h2 class="section-title"><?php the_title() ?> FAQs</h2></center>
         
         <div class="row">
 
@@ -10,7 +10,7 @@
         if( have_rows('faqs') ):
             // loop through the rows of data
             while ( have_rows('faqs') ) : the_row();
-        ?>
+        ?>  
             <div class="col-md-6">
                 <div class="Faq">
                     <div class="Faq__title">

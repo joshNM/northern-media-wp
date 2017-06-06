@@ -654,6 +654,10 @@ section#approach, #service-intro {
     padding: 50px 0;
 }
 
+.Faqs .section-title {
+    margin-bottom: 50px;
+}
+
 .Faq {
     background: white;
     padding: 25px;
@@ -673,5 +677,12 @@ section#approach, #service-intro {
 .Faq__answer {
     display: none;
     /*margin-top: 10px;*/
+}
+
+.absolute {
+    position: relative;
+    left: 15px;
+    right: 15px;
+    z-index: 20;
 }
 
