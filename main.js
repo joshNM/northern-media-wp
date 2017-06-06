@@ -3,7 +3,7 @@ $(document).ready(function(){
     // NEWS MATCH HEIGHT
     $('#latest-news .latest-news-inner').matchHeight();
     $('#employee-news .col-md-4').matchHeight();
-    $('.Faqs .col-md-6').matchHeight();
+    // $('.Faqs .col-md-6').matchHeight();
 
     // MAP JS
     $('.map-container').click(function(){
