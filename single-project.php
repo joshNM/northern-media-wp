@@ -9,7 +9,7 @@
 get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
+		<?php get_template_part( 'template-parts/content', 'servicenav' ); ?>
 	
 		<img src="<?php the_field('banner_image'); ?>" style="max-width: 100%; height: auto;">
 
