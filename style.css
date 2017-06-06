@@ -701,3 +701,11 @@ section#approach, #service-intro {
         flex-basis: 49%;
     height: 100%;
 }
+
+@media (max-width: 600px) {
+ .flex-faq .Faq {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 100%;
+    height: 100%;
+}  
+}
