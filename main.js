@@ -17,6 +17,12 @@ $(document).ready(function(){
         $('#services-nav').slideToggle();
     })
 
+    // FAQ Click
+    $('.Faq').click(function(){
+      console.log('click')
+      $(this).find('.Faq__answer').slideToggle();
+    })
+
     // PROJECTS FILTER ============================================================================================== //
     $('#case-nav li').click(function(){
       var placeToAddCase = $('#projects-grid');

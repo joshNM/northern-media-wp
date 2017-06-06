@@ -31,6 +31,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     border-radius: 0px !important;
 }
 
+.crunchify-social {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 .map-container {
     width: 100%;
 }
@@ -639,4 +644,32 @@ section#approach, #service-intro {
 
 #case-nav li img {
     max-width: 100%;
+}
+
+.sl-icon svg {
+    fill: red;
+}
+
+.Faqs {
+    padding: 50px 0 30px 0;
+}
+
+.Faq {
+    background: white;
+    padding: 25px;
+    border: 5px solid #ececec;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.Faq__title h3 {
+    font-size: 19px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.Faq__answer {
+    display: none;
+    /*margin-top: 10px;*/
 }

@@ -120,6 +120,7 @@ get_header(); ?>
 		get_template_part( 'template-parts/content', 'latestnews' );
 
 		// get_template_part( 'template-parts/content', 'team' );
+		get_template_part( 'template-parts/content', 'faqs' );
 
 		// Newsletter
 		get_template_part( 'template-parts/content', 'newsletter' );
