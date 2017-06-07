@@ -11,8 +11,6 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<?php get_template_part( 'template-parts/content', 'servicenav' ); ?>
 		<?php get_template_part( 'template-parts/content', 'slider' ); ?>
-	
-		<img src="<?php the_field('banner_image'); ?>" style="max-width: 100%; height: auto;">
 
 		<section class="project-content" style="background: #f6f6f6; padding: 20px 0px 40px 0px;">
 			<div class="container">
