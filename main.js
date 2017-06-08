@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
     // NEWS MATCH HEIGHT
     $('#latest-news .latest-news-inner').matchHeight();
     $('#employee-news .col-md-4').matchHeight();
@@ -31,9 +33,9 @@ $(document).ready(function(){
       console.log('click')
       $(this).find('.Faq__answer').slideToggle();
       // $(this).toggleClass('absolute')
-    })
+    }) 
 
-    // PROJECTS FILTER ============================================================================================== //
+    // PROJECTS FILTER 
     $('#case-nav li').click(function(){
       var placeToAddCase = $('#projects-grid');
       // Get type clicked
@@ -68,3 +70,4 @@ $(document).ready(function(){
         });
     });
 });
+

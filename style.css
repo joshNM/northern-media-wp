@@ -105,11 +105,11 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
 
 .slide-overlay {
     position: absolute;
-    z-index: 2;
     max-width: 75vw;
     top: 55%;
     transform: translateY(-60%);
     left: 10%;
+    z-index: 9999;
 }
 
 .slide-overlay button {
@@ -122,6 +122,8 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     color: #c3d600;
     line-height: .7;
     font-size: 50px;
+    position: relative;
+    z-index: 9999;
 }
 
 .slide-overlay h2 {
@@ -129,6 +131,8 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     font-weight: 100;
     font-size: 24px;
     color: white;
+    position: relative;
+    z-index: 9999;
 }
 
 @media (min-width: 1500px) {
@@ -833,26 +837,26 @@ section#approach, #service-intro {
 }
 
 
-
-.shape {
-    position: absolute;
-    top: -593px;
-    bottom: 0;
-    left: 0;
-    width: 961px;
-    background: -webkit-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0)100%);
-    background: -o-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
-    background: -ms-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
-    background: -moz-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
-    background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
-    transform: rotate(47deg);
-    height: 1500px;
-    mix-blend-mode: multiply;
-    opacity: 0.9;
-}
-
-@media(max-width: 1500px) {
-    .shape {
-        width: 650px;
+  /* <= IE 7 */
+    @media screen\9 {
+        .slide-bg {
+           width: 100vw;
+           opacity: 0.7;
+        }
     }
-}
+
+    /* IE 8 */
+    @media \0screen {
+        .slide-bg {
+            width: 100vw;
+            opacity: 0.7;
+        }
+    }
+
+    /* >= IE10 */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .slide-bg {
+           width: 100vw;
+           opacity: 0.7;
+        }
+    }

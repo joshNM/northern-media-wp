@@ -1,3 +1,13 @@
+<?php  
+function ae_detect_ie()
+{
+    if (isset($_SERVER['HTTP_USER_AGENT']) && 
+    (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false))
+        return true;
+    else
+        return false;
+}
+?>
 <section id="home-slider">
     <!-- Swiper -->
     <div class="swiper-container-home" style="position: relative;">
@@ -22,8 +32,6 @@
                     <?php endif ?>
 
                 </div>
-                
-          
                 <div class="slide-bg"></div>
             </div>
             <?php  endwhile;
@@ -36,3 +44,7 @@
         <div class="swiper-pagination-home"></div>
     </div>
 </section>
+
+<!--[if IE ]>
+Special instructions for IE here
+<![endif]-->
