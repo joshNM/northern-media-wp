@@ -899,3 +899,7 @@ div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
 #service-intro .section-title {
     margin-top: 0px;
 }
+
+span.wpcf7-not-valid-tip {
+    margin-top: 10px;
+}
