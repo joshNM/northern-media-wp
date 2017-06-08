@@ -15,7 +15,7 @@ get_header(); ?>
 		<!-- CONTENT HERE -->
 		<section class="Project-page">
 			<div class="container">
-				<div class="Project-title"><h1 class="partial-title">Dental Excellence Harewood Website Redesign</h1></div>
+				<div class="Project-title"><h1 class="partial-title"><?php the_field('project_caption'); ?></h1></div>
 				<div class="Project-line"></div>
 				<div class="row">
 					<div class="col-md-7">
