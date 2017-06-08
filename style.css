@@ -889,3 +889,8 @@ section#approach, #service-intro {
             opacity: 0.6;
         }
 }
+
+
+div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
+    display: none;
+}
