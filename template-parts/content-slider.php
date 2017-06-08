@@ -25,9 +25,9 @@
                 </div>
                 
                 <?php if(!is_singular('project')) : ?>
-                    <div class="slide-bg"></div>
+                    <!-- <div class="slide-bg"></div> -->
                 <?php endif; ?>
-                
+                    <div class="shape" "></div>                
 
                 <div class="next">
                     <i class="fa fa-chevron-right" aria-hidden="true"></i>

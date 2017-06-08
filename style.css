@@ -107,7 +107,7 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     position: absolute;
     z-index: 2;
     max-width: 75vw;
-    top: 60%;
+    top: 55%;
     transform: translateY(-60%);
     left: 10%;
 }
@@ -829,5 +829,30 @@ section#approach, #service-intro {
     }
     .Project-page i {
         display: none;
+    }
+}
+
+
+
+.shape {
+    position: absolute;
+    top: -593px;
+    bottom: 0;
+    left: 0;
+    width: 961px;
+    background: -webkit-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0)100%);
+    background: -o-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
+    background: -ms-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
+    background: -moz-linear-gradient(left, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
+    background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40%, rgb(87, 109, 90) 67%, rgb(195, 214, 0) 100%);
+    transform: rotate(47deg);
+    height: 1500px;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+}
+
+@media(max-width: 1500px) {
+    .shape {
+        width: 650px;
     }
 }

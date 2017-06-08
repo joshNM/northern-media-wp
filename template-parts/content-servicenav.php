@@ -18,7 +18,7 @@
         static $delay = 0;
       ?>
 
-      <li class="service-icon wow fadeIn" data-wow-delay="<?php echo $delay . 's' ?>">
+      <li class="service-icon " data-wow-delay="<?php echo $delay . 's' ?>">
         <div>
         <a href="<?php the_permalink(); ?>">
           <img src="<?php echo $svg['url']; ?>" style="width: 80px; height: 80px;" alt=""/>
