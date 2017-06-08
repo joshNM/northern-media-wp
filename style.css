@@ -815,4 +815,7 @@ section#approach, #service-intro {
         height: 100%;
         min-height: 100%;
     }
+    .Project-page i {
+        display: none;
+    }
 }
