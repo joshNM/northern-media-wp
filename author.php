@@ -14,8 +14,9 @@
 get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
+	<?php get_template_part( 'template-parts/content', 'servicenav' ); ?>
 	<?php
+
 		$curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
 		$userID = $name = $curauth->data->ID;
 		$name = $curauth->data->display_name;

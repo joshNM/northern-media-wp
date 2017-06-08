@@ -24,8 +24,10 @@
 
                 </div>
                 
-          
-                <div class="slide-bg"></div>
+                <?php if(!is_single('project')) : ?>
+                    <div class="slide-bg"></div>
+                <?php endif; ?>
+                
 
                 <div class="next">
                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
