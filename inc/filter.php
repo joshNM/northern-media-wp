@@ -57,6 +57,9 @@ function filterProj() {
                     case 'email':
                         $icon = get_stylesheet_directory_uri() . '/images/pngicons/9.png';
                         break;
+                    case 'ppc':
+                        $icon = get_stylesheet_directory_uri() . '/images/pngicons/10.png';
+                        break;
                     default:
                         echo 'None';
                 }

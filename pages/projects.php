@@ -63,6 +63,10 @@ get_header(); ?>
 						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/pngicons/9.png">
 						<span>Email</span> 
 					</li>
+					<li class="ppc">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/pngicons/10.png">
+						<span>PPC</span> 
+					</li>
 				 </ul>
 			</div>
 		</div>
