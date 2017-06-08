@@ -6,6 +6,7 @@ $(document).ready(function(){
     $('#latest-news .latest-news-inner').matchHeight();
     $('#employee-news .col-md-4').matchHeight();
     $('.testimonial-slide').matchHeight();
+    $('.employee-article').matchHeight();
     // $('.Faqs .col-md-6').matchHeight();
 
     // MAP JS
