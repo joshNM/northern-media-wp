@@ -894,3 +894,7 @@ section#approach, #service-intro {
 div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
     display: none !important;
 }
+
+#service-intro .section-title {
+    margin-top: 0px;
+}
