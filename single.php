@@ -14,6 +14,7 @@ get_header(); ?>
 
 		// Service nav
 		get_template_part( 'template-parts/content', 'servicenav' );
+		get_template_part( 'template-parts/content', 'slider' );
 
 		// Start loop...
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
