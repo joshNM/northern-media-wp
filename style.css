@@ -880,3 +880,12 @@ section#approach, #service-intro {
         }
 }
 
+@supports (-ms-ime-align:auto) {
+        .slide-bg {
+           width: 100vw;
+           opacity: 0.7;
+        }
+        .testimonial-slide .slide-bg {
+            opacity: 0.6;
+        }
+}
