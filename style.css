@@ -892,5 +892,5 @@ section#approach, #service-intro {
 
 
 div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
-    display: none;
+    display: none !important;
 }
