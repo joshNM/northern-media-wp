@@ -14,9 +14,16 @@ $(document).ready(function(){
 
     // SERVICE NAV
     $('.menu-item-86').click(function(event){
-        console.log('Clicked');
-        event.preventDefault();
-        $('#services-nav').slideToggle();
+
+        if ($(window).width() < 800) {
+          
+        } else {
+          console.log('Clicked');
+          event.preventDefault();
+          $('#services-nav').slideToggle();
+        }
+
+   
     })
 
     // FAQ Click

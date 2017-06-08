@@ -807,3 +807,12 @@ section#approach, #service-intro {
 .fa-chevron-left, .fa-chevron-right {
     cursor: pointer;
 }
+@media(max-width: 576px) {
+    .section-title {
+        margin-top: 0;
+    }
+    .page-id-11 #approach {
+        height: 100%;
+        min-height: 100%;
+    }
+}
