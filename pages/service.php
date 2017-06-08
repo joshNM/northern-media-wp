@@ -115,13 +115,12 @@ get_header(); ?>
 	</section>
 
 	<?php
-		get_template_part( 'template-parts/content', 'team' );
 
+		get_template_part( 'template-parts/content', 'servicetestimonial' );
 		get_template_part( 'template-parts/content', 'latestnews' );
-
+		get_template_part( 'template-parts/content', 'team' );
 		// get_template_part( 'template-parts/content', 'team' );
 		get_template_part( 'template-parts/content', 'faqs' );
-
 		// Newsletter
 		get_template_part( 'template-parts/content', 'newsletter' );
 		// Contact

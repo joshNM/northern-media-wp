@@ -718,3 +718,43 @@ section#approach, #service-intro {
         padding: 50px 0;
     }
 }
+
+.testimonial-slide {
+    text-align: center;
+    padding: 80px 0;
+    background-size: cover;
+}
+
+.testimonial-slide .slide-bg {
+    webpack-clip-path: none;
+    clip-path: none;
+    width: 100%;
+}
+
+.testimonial-slide p {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.testimonial-slide .author-of-testimonial {
+    color: #c3d600;
+    z-index: 999999;
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.testimonial-slide .author-workplace {
+    color: white;
+    z-index: 999999;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.swiper-container-home .prev i, .swiper-container-home .next i, .swiper-container-home .next {
+    z-index: 999999;
+}
