@@ -133,6 +133,7 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     color: white;
     position: relative;
     z-index: 9999;
+    max-width: 500px;
 }
 
 @media (min-width: 1500px) {
