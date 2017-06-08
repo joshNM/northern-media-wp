@@ -25,7 +25,7 @@
                     <i class="fa fa-chevron-left" aria-hidden="true"></i>
                 </div>
             </div>
-            <?php  endwhile; ?>
+            <?php  endwhile; wp_reset_query();?>
             <!-- Add Pagination -->
         </div>
         
