@@ -10,7 +10,7 @@
                 $testimonials = new WP_Query($testimonialArgs);
             ?>
             <?php while($testimonials->have_posts()) : $testimonials->the_post(); ?>
-            <div class="swiper-slide testimonial-slide" style="background: url(<?php the_post_thumbnail_url(); ?>)">  
+            <div class="swiper-slide testimonial-slide" style="background: url(<?php the_post_thumbnail_url(); ?>); background-size: cover;background-size: center center;">  
                 <div style="position: relative;z-index: 99;">
                 <?php the_content(); ?>
                 </div>
