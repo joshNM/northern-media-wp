@@ -1,7 +1,7 @@
 <section id="employee-news">
     <div class="container">
         <div class="center"><h2 class="section-title">Employee News</h2></div>
-        <p><?php the_field('employee_news_text', 'option') ?></p>
+        <?php the_field('employee_news_text', 'option') ?>
 
         <div class="row">
         
