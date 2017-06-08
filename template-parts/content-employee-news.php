@@ -1,9 +1,7 @@
 <section id="employee-news">
     <div class="container">
         <div class="center"><h2 class="section-title">Employee News</h2></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi.</p>
+        <p><?php the_field('employee_news_text', 'option') ?></p>
 
         <div class="row">
         
