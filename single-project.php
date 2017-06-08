@@ -11,47 +11,31 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<?php get_template_part( 'template-parts/content', 'servicenav' ); ?>
 		<?php get_template_part( 'template-parts/content', 'slider' ); ?>
-
-		<section class="project-content" style="background: #f6f6f6; padding: 20px 0px 40px 0px;">
+		
+		<!-- CONTENT HERE -->
+		<section class="Project-page">
 			<div class="container">
+				<div class="Project-title"><h1 class="partial-title">Dental Excellence Harewood Website Redesign</h1></div>
+				<div class="Project-line"></div>
 				<div class="row">
-					<div class="col-sm-8">
-						<h1><?php the_title(); ?></h1>
+					<div class="col-md-7">
 						<?php the_field('content'); ?>
-
-						<?php 
-
-						$svg = get_field('category_image', 'category_'. the_category_ID( $echo ) .'');
-
-						$cats = get_the_category();
-
-						?>
-
 					</div>
-					<div class="col-sm-4">
-						<div class="card">
-							<div class="card__img">
-								<img src="<?php the_field('client_logo') ?>">
-							</div>
-							<div class="card__content">
-								<ul>
-									<li>Client: <span><?php the_field('client') ?></span></li>
-									<li>Project: <span><?php the_field('work_done') ?></span></li>
-									<li>Services: <span></span></li>
-									<li>
-									<?php
-										foreach ($cats as $cat) {
-										    $catID = $cat->term_id;
-										    $svg = get_field('category_image', 'category_'. $catID .'');
-
-										    echo '<img class="svg" style="height: 50px; width: 50px;" src="'.$svg['url'].'">';
-
-										}
-									 ?>
-									</li>
-								</ul>
-							</div>
-						</div>
+					<div class="col-md-5">
+					<?php 
+					$images = get_field('project_image');
+					if( $images ): ?>
+					    <ul>
+					        <?php foreach( $images as $image ): ?>
+					            <li>
+					                <a href="<?php echo $image['url']; ?>" data-lightbox="nm" data-title="<?php echo $image['title']; ?>">
+					                	<i class="fa fa-search-plus" aria-hidden="true"></i>
+					                     <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>" />
+					                </a>
+					            </li>
+					        <?php endforeach; ?>
+					    </ul>
+					<?php endif; ?>
 					</div>
 				</div>
 			</div>

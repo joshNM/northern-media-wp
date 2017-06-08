@@ -24,7 +24,7 @@
 
                 </div>
                 
-                <?php if(!is_single('project')) : ?>
+                <?php if(!is_singular('project')) : ?>
                     <div class="slide-bg"></div>
                 <?php endif; ?>
                 
