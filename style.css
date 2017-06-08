@@ -160,7 +160,7 @@ background: linear-gradient(to right, rgb(169, 106, 141) 0%, rgb(95, 95, 110) 40
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 900px) {
     .slide-overlay h1 {
         font-weight: bold;
         color: #c3d600;
