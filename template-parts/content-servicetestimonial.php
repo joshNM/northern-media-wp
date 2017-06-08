@@ -15,7 +15,7 @@
                 <?php the_content(); ?>
                 </div>
                 <p class="author-of-testimonial"><?php the_title(); ?></p>
-                <p class="author-workplace">Excel Joinery</p>
+                <p class="author-workplace"><?php the_field('testimonial_author'); ?></p>
                 <div class="slide-bg"></div>
 
                 <div class="next">
