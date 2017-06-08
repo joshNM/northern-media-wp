@@ -903,3 +903,7 @@ div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
 span.wpcf7-not-valid-tip {
     margin-top: 10px;
 }
+
+.fa-commenting-o {
+    cursor: pointer;
+}
