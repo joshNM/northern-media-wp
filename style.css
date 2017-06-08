@@ -726,7 +726,7 @@ section#approach, #service-intro {
 }
 
 .testimonial-slide .slide-bg {
-    webpack-clip-path: none;
+    -webkit-clip-path: none;
     clip-path: none;
     width: 100%;
 }
@@ -807,6 +807,15 @@ section#approach, #service-intro {
 .fa-chevron-left, .fa-chevron-right {
     cursor: pointer;
 }
+@media (max-width: 800px) {
+    .section-title {
+        margin-top: 0px;
+    }
+    .page-id-11 #approach {
+        min-height: 100%;
+    }
+}
+
 @media(max-width: 576px) {
     .section-title {
         margin-top: 0;
