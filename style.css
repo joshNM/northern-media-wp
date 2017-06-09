@@ -924,3 +924,7 @@ span.wpcf7-not-valid-tip {
 .navbar, .navbar-default, .navbar-fixed-top {
     z-index: 99999999999;
 }
+
+#profile {
+    padding: 50px 0;
+}
