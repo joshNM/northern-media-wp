@@ -52,7 +52,7 @@ get_header(); ?>
 
 
 			<!-- Swiper -->
-			<div class="swiper-container" id="recent-projects" style="position: relative; overflow: visible !important;">
+			<div class="swiper-container" id="recent-projects" style="padding-top: 0px; padding-bottom: 0px;position: relative; overflow: visible !important;">
 				<div class="swiper-wrapper" style="padding: 0px 0px;">
 
 
