@@ -27,14 +27,23 @@ get_header(); ?>
 		$linkedinURL = get_field('linkedin', 'user_' . $userID);
 
 	 ?>
-
+<style type="text/css">
+	.single-news-item h2, .single-news-item h3, .single-news-item h4, .single-news-item h5 {
+		color: #c2d102;
+	}
+	.single-news-item p {
+		color: #9d9d9c;
+	}
+</style>
 	<section id="article">
 		<div class="container">
 			<h2 class="section-title"><?php the_title(); ?></h2>
 			<article>
 
-
-					<?php the_content(); ?>
+					<div class="single-news-item">
+						<?php the_content(); ?>
+					</div>
+					
 
 					<div id="author">
 						<img src="<?php echo $profilePhoto; ?>" style="margin-right: 15px;">
@@ -46,7 +55,7 @@ get_header(); ?>
 							<div class="arrow-left"></div>
 						</div>
 					</div>
-					<span id="back"><a href="javascript: history.go(-1)"> <i class="fa fa-caret-left" aria-hidden="true"></i>
+					<span id="back"><a style="color: #9d9d9c !important;" href="javascript: history.go(-1)"> <i class="fa fa-caret-left" aria-hidden="true"></i>
 Back</a></span>
 
 			</article>

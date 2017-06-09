@@ -907,19 +907,6 @@ span.wpcf7-not-valid-tip {
 .fa-commenting-o {
     cursor: pointer;
 }
-
-#article h2, h3, h4, h5, h6 {
-    color: #c2d102;
-}
-
-#article p {
-    color: #9d9d9c;
-}
-
-#article .section-title {
-    color:#9d9d9c;
-}
-
-#author-info h2, h3, h4, h5 {
-    color: white;
+.navbar, .navbar-default, .navbar-fixed-top {
+    z-index: 99999999999;
 }

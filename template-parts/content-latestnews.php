@@ -42,7 +42,7 @@
         <div class="latest-news-inner">
           <img src="<?php echo $feat_image; ?>" />
           <div class="content">
-            <h4><a href="<?php the_permalink(); ?>" style="color: black; text-decoration: none;"><?php the_title(); ?></a></h4>
+            <h4 style="color: black;"><a href="<?php the_permalink(); ?>" style="color: black; text-decoration: none;"><?php the_title(); ?></a></h4>
             <p>
               <?php echo wp_trim_words( get_the_content(), 20, '...' ); ?>
             </p>
@@ -76,7 +76,7 @@
         'post_type'     => 'post'
       );
       ?>
-      <h4>News Archive</h4>
+      <h4 style="color: white;">News Archive</h4>
       <ul id="archives">
       <?php
       wp_get_archives( $args ); ?>

@@ -11,14 +11,21 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<?php get_template_part( 'template-parts/content', 'servicenav' ); ?>
 		<?php get_template_part( 'template-parts/content', 'slider' ); ?>
-		
+<style type="text/css">
+	.single-news-item h2, .single-news-item h3, .single-news-item h4, .single-news-item h5 {
+		color: #c2d102;
+	}
+	.single-news-item p {
+		color: #9d9d9c;
+	}
+</style>
 		<!-- CONTENT HERE -->
 		<section class="Project-page">
 			<div class="container">
 				<div class="Project-title"><h1 class="partial-title"><?php the_field('project_caption'); ?></h1></div>
 				<div class="Project-line"></div>
 				<div class="row">
-					<div class="col-md-7">
+					<div class="col-md-7 single-news-item">
 						<?php the_field('content'); ?>
 					</div>
 					<div class="col-md-5">
