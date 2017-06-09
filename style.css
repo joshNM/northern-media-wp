@@ -808,6 +808,13 @@ section#approach, #service-intro {
     color: #9d9d9c;
 }
 
+@media(max-width: 1032px) {
+   .Project-page li i {
+    display: none;
+} 
+}
+
+
 .Project-line {
     width: 200px;
     height: 1px;
