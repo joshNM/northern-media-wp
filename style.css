@@ -928,3 +928,7 @@ span.wpcf7-not-valid-tip {
 #profile {
     padding: 50px 0;
 }
+
+#profile .section-title {
+    margin-top: 0px !important;
+}
