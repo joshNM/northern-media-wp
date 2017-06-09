@@ -798,9 +798,14 @@ section#approach, #service-intro {
 .Project-title {
     text-align: center;
     padding-bottom: 50px;
-    color: #707070;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    color: #9d9d9c;
+
+}
+
+.Project-title .partial-title {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important; 
+    color: #9d9d9c;
 }
 
 .Project-line {
