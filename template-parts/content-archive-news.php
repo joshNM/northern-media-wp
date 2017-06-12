@@ -53,7 +53,8 @@
     <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
-<div style="clear: both;">
+    <div style="clear: both;"></div>
+<div>
     <?php
 
 
