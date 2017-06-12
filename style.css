@@ -945,3 +945,9 @@ h2.section-title {
 #service-intro {
     color: #9d9d9c !important;
 }
+
+@media (max-width: 768px) {
+    .projects-slide-wrap .fa-chevron-left, .projects-slide-wrap .fa-chevron-right {
+        display: none;
+    }
+}

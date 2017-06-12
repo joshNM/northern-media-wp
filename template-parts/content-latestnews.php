@@ -40,7 +40,9 @@
 
       <div class="col-xs-12 col-sm-4 col-md-4">
         <div class="latest-news-inner">
+          <?php if($feat_image) : ?>
           <img src="<?php echo $feat_image; ?>" />
+          <?php endif; ?>
           <div class="content">
             <h4 style="color: black;"><a href="<?php the_permalink(); ?>" style="color: black; text-decoration: none;"><?php the_title(); ?></a></h4>
             <p>
