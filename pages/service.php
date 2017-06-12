@@ -26,7 +26,7 @@ get_header(); ?>
 
 
 	<section id="service-intro">
-		<div class="container" style="overflow: hidden;">
+		<div class="container" style="overflow: visible;">
 			<h2 class="section-title"><?php the_title(); ?></h2>
 			<?php the_content(); ?>
 			<?php
@@ -52,7 +52,8 @@ get_header(); ?>
 
 
 			<!-- Swiper -->
-			<div class="swiper-container" id="recent-projects" style="padding-top: 0px; padding-bottom: 0px;position: relative; overflow: visible !important;">
+			<div class="projects-slide-wrap" style="position: relative;">
+			<div class="swiper-container" id="recent-projects" style="padding-top: 0px; padding-bottom: 0px;position: relative;">
 				<div class="swiper-wrapper" style="padding: 0px 0px;">
 
 
@@ -101,9 +102,12 @@ get_header(); ?>
 				<?php endwhile; ?>
 		        <?php wp_reset_postdata(); ?>
 					</div>
+
+				</div>
 					<i class="fa fa-chevron-right" id="service" aria-hidden="true" style="z-index: 10000000000;"></i>
 					<i class="fa fa-chevron-left" id="service" aria-hidden="true" style="z-index: 10000000000;"></i>
 				</div>
+
 						<!-- Add Arrows -->
 
 
