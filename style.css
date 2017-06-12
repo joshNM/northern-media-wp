@@ -951,3 +951,7 @@ h2.section-title {
         display: none;
     }
 }
+
+.single-news-item h3:first-child {
+    margin-top: 0;
+}
