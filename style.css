@@ -955,3 +955,9 @@ h2.section-title {
 .single-news-item h3:first-child {
     margin-top: 0;
 }
+
+@media(max-width: 768px) {
+.Project-page .col-md-5 {
+    margin-top: 15px;
+}
+}
