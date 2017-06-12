@@ -26,7 +26,7 @@
   <?php
 	  $latestNews = array(
 		    'post_type' => 'post',
-		    'order' => 'asc',
+		    'order' => 'DESC',
 			  'posts_per_page' => 3
 			);
 
