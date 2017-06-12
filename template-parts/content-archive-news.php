@@ -56,7 +56,6 @@
 
     <?php
 
-      if (is_page(19)) {
 
 
       $args = array(
@@ -76,9 +75,7 @@
       <?php
       wp_get_archives( $args ); ?>
     </ul>
-    <?php
-      }
-    ?>
+
 
     </div>
     <!-- <button type="button" name="button" class="button">View More</button> -->
