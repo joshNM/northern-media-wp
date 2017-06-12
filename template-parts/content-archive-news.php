@@ -53,7 +53,7 @@
     <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
-
+<div>
     <?php
 
 
@@ -75,7 +75,7 @@
       <?php
       wp_get_archives( $args ); ?>
     </ul>
-
+</div>
 
     </div>
     <!-- <button type="button" name="button" class="button">View More</button> -->
