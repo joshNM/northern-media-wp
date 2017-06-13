@@ -968,3 +968,9 @@ h2.section-title {
 .author #profile-content p {
     line-height: 2.5;
 }
+
+@media(max-width: 1000px) {
+    #social-hub {
+        display: none;
+    }
+}
