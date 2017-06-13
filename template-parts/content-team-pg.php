@@ -9,6 +9,8 @@
 
       $userArgs = array(
         'role' => 'Author',
+        'orderby' => 'include', 
+        'include' => array(4, 7, 2, 9, 8, 15, 19, 16, 20, 17, 11, 14, 10, 18),
       );
 
       // The Query
